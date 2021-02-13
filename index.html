@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Travel Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+        
+        
+        <video src="beach.mp4" muted loop autoplay></video>
+<!-- styled to give a bright overlay over the video -->
+        <div class="overlay"></div>
+        
+        
+        <div class="text">
+            <h2>The World</h2>
+            <h3>is yours to explore</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Blanditiis optio veritatis voluptatem odio eaque itaque consequuntur 
+            voluptatibus porro. Aspernatur, dignissimos!</p>
+            <a href="#">Explore</a>
+        </div>
+        
+        <ul class="social">
+            <li><a><img src="https://i.ibb.co/x7P24fL/facebook.png" alt=""></a></li>
+            <li><a><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a></li>
+            <li><a><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    
+    
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+    
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+        
+    // Toggle the class of 'active' on both elements when toggle sandwich is clicked. Meaning if 'active' is applied, it's going to remove it and if it's not, it's going to add it. When toggle sandwich is clicked - the 2 elements will display behaviours. showcase is going to move over 300px and menuToggle is going to change from a sandwich menu to an X.
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
