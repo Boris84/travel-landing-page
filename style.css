@@ -221,11 +221,23 @@
     }
     
     .text h2 {
-        font-size: 3em;
+        font-size: 3.3em;
     }
     
     .text h3 {
         font-size: 2em;
+    }
+}
+
+
+
+@media(max-height: 768px) and (orientation: landscape) {
+    .showcase {
+        padding: 100px;
+    }
+    
+    .showcase header {
+        padding: 20px 100px;
     }
 }
 
